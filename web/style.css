@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  #cursor {
+    height: 25px;
+    width: 25px;
+    border-radius: 10%;
+    position: fixed;
+    z-index: 99;
+  }
+  
+  #cursor-blur {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(194, 142, 150);
+    border-radius: 20%;
+    position: fixed;
+    filter: blur(100px);
+    z-index: 9;
+    transition: all linear 0.4s;
+  }
+  
+  #nav {
+    height: 150px;
+    width: 100%;
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    gap: 70px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 99;
+    color: rgb(135, 40, 56);
+  }
+  
+  #nav img {
+    height: 80px;
+    margin-left: -100px;
+  }
+  
+  #nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+  }
+  
+  #main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+  }
+  
+  #page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+    color: rgb(213, 155, 155);
+  }
+  
+  #page1 h1 {
+    font-size: 70px;
+    font-weight: 900;
+  }
+  
+  #page1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #pages1 p {
+    font-size: 22px;
+    font-weight: 500;
+    width: 40%;
+    padding: 200px;
+  }
+  
+  #page2 {
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  #aboutme-img {
+    width: auto;
+    height: 50%;
+    align-items: center;
+    border-radius: 20px;
+    border-color: black;
+  }
+  
+  #about-me {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    /*padding: 0 50 px;*/
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+  }
+  
+  #page2 #aboutme-in h3 {
+    color: rgb(104, 104, 104);
+    font-size: 42px;
+    margin-left: -300px;
+    margin-top: -150px;
+    font-style: italic;
+  }
+  
+  #page2 #aboutme-in p {
+    color: rgb(104, 104, 104);
+    font-size: 28px;
+    margin-left: -300px;
+    margin-top: 50px;
+  }
+
+  #page3{
+    height: 100%;
+    width: 100%;
+  }
+  
+  #cards-container {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    opacity: 90%;
+    position: relative;
+  }
+  
+  .card {
+    height: 70%;
+    width: 30%;
+    background-color: white;
+    border: 10px solid rgb(54, 54, 54);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 2%;
+    overflow: hidden;
+  }
+  
+  .img1 {
+    height: 100%;
+    width: 100%;
+    border-image: fill;
+  }
+  
+  .quiet {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    color: rgb(105, 31, 31); /* Set the text color to contrast with the image */
+    /* Add a semi-transparent background */
+    padding: 10px 20px; /* Add padding to the text */
+    border-radius: 1.5px; /* Add some border-radius for a rounded background */
+  }
+  
+  .img2 {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .loud {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    color: rgb(244, 238, 238); /* Set the text color to contrast with the image */
+    /* Add a semi-transparent background */
+    padding: 10px 20px; /* Add padding to the text */
+    border-radius: 1.5px; /* Add some border-radius for a rounded background */
+  }
+
+#page4 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+#page4 h1 {
+  font-size: 50px;
+  color: rgb(105, 31, 31);
+  padding: 150px;
+}
+
+#page5 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page5>p {
+  font-size: 50px;
+  font-weight: 700;
+  width: 45%;
+  text-align: center;
+  line-height: 60px;
+  color: rgb(105, 31, 31);
+}
+
+#page6 {
+  height: 50%;
+  width: 100%;
+}
+
+#page6 h4 {
+  color: antiquewhite;
+}
